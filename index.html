@@ -41,6 +41,7 @@
 		<imagetarget id='rmn' src='targets/rmn.png'></imagetarget>
 		<imagetarget id='bear' src='targets/bear.png'></imagetarget>
 		<imagetarget id='Skull-AR' src='targets/Skull-AR.png'></imagetarget>
+		<imagetarget id='Heart-AR' src='targets/Heart-AR.jpeg'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <div id="startARDiv" class="ctaDiv">
@@ -82,7 +83,7 @@
         });;
         
     </script>
-    <script src="Build/dep.loader.js"></script>
+    <script src="Build/kbe.loader.js"></script>
     <script>
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
@@ -95,7 +96,7 @@
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
                     dataUrl: "Build/webgl.data",
-                    frameworkUrl: "Build/build.framework.js",
+                    frameworkUrl: "Build/kbe.framework.js",
                     codeUrl: "Build/build.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
